@@ -11,7 +11,7 @@ namespace BasicCoreProgram1
         static void Main(string[] args)
         {
             Console.WriteLine("Please choose one program from below options");
-            Console.WriteLine("1:FlipCoin \n2:LeapYear");
+            Console.WriteLine("1:FlipCoin \n2:LeapYear \n3:PowerOf2 ");
             string options = Console.ReadLine();
             switch (options)
             {
@@ -21,6 +21,9 @@ namespace BasicCoreProgram1
                 case "2":
                     LeapYear.Leap();
                     break;
+                case "3":
+                    PowerOf2.power();
+                    break;                    
                 default:
                     Console.WriteLine("Choose from above options only");
                     Console.ReadLine();
