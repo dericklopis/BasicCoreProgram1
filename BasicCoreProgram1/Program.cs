@@ -11,15 +11,21 @@ namespace BasicCoreProgram1
         static void Main(string[] args)
         {
             Console.WriteLine("Please choose one program from below options");
-            Console.WriteLine("1:FlipCoin \n");
+            Console.WriteLine("1:FlipCoin \n2:LeapYear");
             string options = Console.ReadLine();
             switch (options)
             {
                 case "1":
                     FlipCoin.Flip();
-                 break;
+                    break;
+                case "2":
+                    LeapYear.Leap();
+                    break;
+                default:
+                    Console.WriteLine("Choose from above options only");
+                    Console.ReadLine();
+                    break;
             }
-               
 
         }
     }
