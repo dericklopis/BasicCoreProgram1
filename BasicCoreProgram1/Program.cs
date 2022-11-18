@@ -11,10 +11,10 @@ namespace BasicCoreProgram1
         static void Main(string[] args)
         {
             Console.WriteLine("Please choose one program from below options");
-            Console.WriteLine("1:FlipCoin \n2:LeapYear \n3:PowerOf2 \n4:HarmonicNumbers \n5:Factors");
+            Console.WriteLine("1:FlipCoin \n2:LeapYear \n3:PowerOf2 \n4:HarmonicNumbers \n5:Factors \n6:QuotientAndRemainder");
             string options = Console.ReadLine();
-            switch (options)
-            {
+           switch (options)
+           {
                 case "1":
                     FlipCoin.Flip();
                     break;
@@ -30,11 +30,14 @@ namespace BasicCoreProgram1
                 case "5":
                     Factors.Prime();
                     break;
+                case "6":
+                    QuotientAndRemainder.QuoRem();
+                    break;
                 default:
                     Console.WriteLine("Choose from above options only");
                     Console.ReadLine();
                     break;
-            }
+           }
 
         }
     }
