@@ -11,7 +11,7 @@ namespace BasicCoreProgram1
         static void Main(string[] args)
         {
             Console.WriteLine("Please choose one program from below options");
-            Console.WriteLine("1:FlipCoin \n2:LeapYear \n3:PowerOf2 \n4:HarmonicNumbers \n5:Factors \n6:QuotientAndRemainder \n7:SwapTwoNumbers \n8:EvenOrOdd");
+            Console.WriteLine("1:FlipCoin \n2:LeapYear \n3:PowerOf2 \n4:HarmonicNumbers \n5:Factors \n6:QuotientAndRemainder \n7:SwapTwoNumbers \n8:EvenOrOdd  \n9:VowelsOrConsonant");
             string options = Console.ReadLine();
            switch (options)
            {
@@ -38,6 +38,9 @@ namespace BasicCoreProgram1
                     break;
                 case "8":
                     EvenOrOdd.EvenOdd();
+                    break;
+                case "9":
+                    VowelOrConsonant.Vowels();
                     break;
                 default:
                     Console.WriteLine("Choose from above options only");
